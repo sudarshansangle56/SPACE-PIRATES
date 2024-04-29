@@ -1,0 +1,87 @@
+
+body {
+  font-family: "Poppins";
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.navbar1 {
+  font-size: 14vh;
+  font-weight: 500;
+}
+
+.CardM1 {
+  margin-top: 4vh;
+}
+
+.card:hover {
+  width: 20rem;
+  background-color: #f1f157;
+  font-size: 2.2vh;
+  transition: 0.30s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 30px 3px rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+  border-radius: 2.5vh;
+  padding: 5px;
+}
+
+.card button:hover {
+  font-size: 2.5vh;
+  background-color: #333;
+  color: #fff;
+  transition: 0.30s;
+}
+
+/*navbar make changes */
+.navbar1 img {
+  border-radius: 5vh;
+  padding: 0.5vh;
+}
+
+.cardbtn button {
+  width: 90%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Footer12 {
+  padding: 5vh;
+  background-color: #333;
+  color: white;
+  border-radius: 3vh;
+  margin: 2vh;
+}
+
+@media screen and (min-width: 325px) and (max-width: 500px) {
+  body {
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+  }
+  .Footer12 {
+    margin-top: 71vh;
+    margin-left: 2vh;
+  }
+  .partb1 {
+    margin: 3vh;
+  }
+  .navbtn button {
+    margin-right: 2vh;
+  }
+  .aboutpage {
+    padding: 45px;
+  }
+  .about1 {
+    height: 420px;
+    width: 350px;
+    background-color: silver;
+    border-radius: 3vh;
+    padding: 40px;
+    margin: 4vh;
+  }
+}

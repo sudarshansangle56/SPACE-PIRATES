@@ -1,0 +1,166 @@
+body{
+
+    background-color: aqua;
+}
+
+.parta {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh;
+  }
+  .parta1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh;
+    padding: 4vh;
+  }
+  .parta1 button:hover {
+  
+    width: 140px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.30s;
+  }
+  
+  .parta1 button {
+    width: 135px;
+    height: 57px;
+    font-size: 3vh;
+    padding: 4px;
+    background-color: rgb(64, 162, 99);
+    border: rgb(64, 162, 99);
+    border-radius: 6px;
+    color: #fff;
+    transition: 0.30s;
+  }
+  
+  .parta1 h1 {
+  
+    font-size: 7.5vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(64, 162, 99);
+  }
+  
+  .parta1 p {
+  
+    font-size: 3vh;
+    color: black;
+    font-weight: 300;
+  }
+  .parta p{
+  
+    font-weight: 450;
+    
+  }
+  
+  .parta2 {
+  
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+    margin: 4vh;
+  
+  }
+  
+  .parta2 img {
+  
+    height: 430px;
+    width: 600px;
+  }
+  
+  .partb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+  }
+  .parta1 button{
+   
+    size: 3vh;
+  
+  }
+  .para p{
+  
+    size: 3vh;
+    
+  }
+  
+  
+  .partb2 {
+  
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5vh;
+  
+  }
+  .both2 h2{
+    text-align: center;
+  }
+  .parta2 img{
+  
+    border-radius: 2vh;
+  }
+  .partc {
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+  
+  }
+  
+  /*ok*/
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh;
+    margin: 4vh;
+  }
+  .location img {
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .payment img {
+    height: 350px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  
+  .payment {
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh;
+    margin: 4vh;
+  
+  }
+  
