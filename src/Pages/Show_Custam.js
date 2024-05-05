@@ -12,7 +12,7 @@ function UserInformation() {
   }, []);
 
   const fetchData = () => {
-    const usersRef = ref(database, "custam_info/custam");
+    const usersRef = ref(database, "customers");
     onValue(usersRef, (snapshot) => {
       const users = snapshot.val();
       if (users) {

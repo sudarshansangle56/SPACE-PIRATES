@@ -1,8 +1,5 @@
 
 import '../CSS/TiffinManagementSystem.css';
-
-
-
 import React, { useState, useEffect } from 'react';
 import { database, ref, onValue } from "../Pages/firebase";
 
@@ -13,7 +10,7 @@ const TiffinManagementSystem = () => {
   const tiffinPrice = 40;
   
   useEffect(() => {
-    const tiffinsRef = ref(database, 'custam_info');
+    const tiffinsRef = ref(database, 'tiffins');
 
     onValue(tiffinsRef, (snapshot) => {
       const tiffinsData = snapshot.val();

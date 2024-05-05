@@ -1,0 +1,35 @@
+.navbar1 {
+    background-color: transparent;
+  }
+  
+  .navbar-brand img {
+    height: 68px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Center-align items */
+    flex-grow: 1;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 25px; /* Increase the space between menu items */
+    font-size: 3.5vh;
+    /* Use 'Rockwell' font as a fallback for 'Copperplate Gothic' */
+    font-family:  'Rockwell', sans-serif;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav .nav-item {
+      margin: 0 30px; 
+    }
+  }
+  

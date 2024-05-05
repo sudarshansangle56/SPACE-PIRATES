@@ -11,7 +11,7 @@ const TiffinManagementSystem = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const customersRef = ref(database, 'custam_info/custam');
+    const customersRef = ref(database, 'customers');
       
     onValue(customersRef, (snapshot) => {
       const customersData = snapshot.val();

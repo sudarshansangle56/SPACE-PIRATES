@@ -9,17 +9,30 @@ body {
   font-size: 14vh;
   font-weight: 500;
 }
+/*navbar make changes */
+.navbar1 img {
+  border-radius: 5vh;
+  padding: 0.5vh;
+}
+.Footer12 {
+  padding: 5vh;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 
-.CardM1 {
-  margin-top: 4vh;
 }
 
-.card:hover {
-  width: 20rem;
-  background-color: #f1f157;
-  font-size: 2.2vh;
-  transition: 0.30s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 30px 3px rgba(0, 0, 0, 0.19);
+/* menun card  */
+.partb2{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.partb2 > * {
+  margin: 3vh;
 }
 
 .card img {
@@ -34,12 +47,6 @@ body {
   transition: 0.30s;
 }
 
-/*navbar make changes */
-.navbar1 img {
-  border-radius: 5vh;
-  padding: 0.5vh;
-}
-
 .cardbtn button {
   width: 90%;
   padding: 10px;
@@ -49,23 +56,21 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.Footer12 {
-  padding: 5vh;
+.card button:hover {
+  font-size: 2.5vh;
   background-color: #333;
-  color: white;
-  border-radius: 3vh;
-  margin: 2vh;
+  color: #fff;
+  transition: 0.30s;
 }
-
+.menupage{
+  background-color: #59ac1ab5;
+}
 @media screen and (min-width: 325px) and (max-width: 500px) {
   body {
     background-color: #f0f0f0;
     overflow-x: hidden;
   }
   .Footer12 {
-    margin-top: 71vh;
-    margin-left: 2vh;
   }
   .partb1 {
     margin: 3vh;
@@ -73,15 +78,5 @@ body {
   .navbtn button {
     margin-right: 2vh;
   }
-  .aboutpage {
-    padding: 45px;
-  }
-  .about1 {
-    height: 420px;
-    width: 350px;
-    background-color: silver;
-    border-radius: 3vh;
-    padding: 40px;
-    margin: 4vh;
-  }
+
 }

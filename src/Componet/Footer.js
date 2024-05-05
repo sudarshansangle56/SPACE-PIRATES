@@ -1,5 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faMap } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -7,30 +14,54 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h3>Gande <br />
+            Tiffin Town</h3>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="/Home" className="nav-link p-0 text-white">
+              <FontAwesomeIcon icon={faFacebook} className="icon" />
+              </li>
+              <li className="nav-item mb-2">
+                <Link to="#" className="nav-link p-0 text-black">
+                <FontAwesomeIcon icon={faInstagram} className="icon" />
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link to="#" className="nav-link p-0 text-black">
+                <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link to="/Record" className="nav-link p-0 text-black">
+                <FontAwesomeIcon icon={faMap} className="icon" />
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-6 col-md-2 mb-3">
+            <h5>Links</h5>
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2">
+                <Link to="/Home" className="nav-link p-0 text-black">
                   Home
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+                <Link to="#" className="nav-link p-0 text-black">
                   Features
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+                <Link to="#" className="nav-link p-0 text-black">
                   Pricing
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/Record" className="nav-link p-0 text-white">
+                <Link to="/Record" className="nav-link p-0 text-black">
                   FAQs
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/About" className="nav-link p-0 text-white">
+                <Link to="/About" className="nav-link p-0 text-black">
                   About
                 </Link>
               </li>
@@ -41,27 +72,27 @@ function Footer() {
             <h5>Contact</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+              <Link to="#" className="nav-link p-0 text-black">
                   nileshgande149@gmail.com
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+              <Link to="#" className="nav-link p-0 text-black">
                   8007077730
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+              <Link to="#" className="nav-link p-0 text-black">
                   Pricing
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+              <Link to="#" className="nav-link p-0 text-black">
                   FAQs
                 </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-white">
+                <Link to="#" className="nav-link p-0 text-black">
                 ©Space Pirates
                 </Link>
               </li>

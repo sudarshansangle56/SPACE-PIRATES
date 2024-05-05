@@ -23,7 +23,7 @@ function AddCustomerForm() {
     if (!validateForm()) return;
 
     try {
-      await push(ref(database, 'custam_info/custam'), { name, email, mobileNumber });
+      await push(ref(database, 'customers'), { name, email, mobileNumber });
       alert("Customer added successfully");
       clearFields();
     } catch (error) {

@@ -1,19 +1,20 @@
-import React from 'react'
-import Navbar from '../Componet/Navbar'
-import Footer from '../Componet/Footer'
-import Menu from '../Componet/Menu'
+import React from "react";
+import Navbar from "../Componet/Navbar";
+import Footer from "../Componet/Footer";
+import Menu from "../Componet/Menu";
 
 function MenuPage() {
   return (
     <div>
-      <Navbar/>
-           
-           <Menu/>
+      <div className="menupage">
+        <Navbar />
 
+        <Menu />
 
-      <Footer/>
+        <Footer />
+      </div>
     </div>
-  )
+  );
 }
 
-export default MenuPage
+export default MenuPage;
