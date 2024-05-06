@@ -6,100 +6,118 @@ import {
   faInstagram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faMap } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
     <div className="Footer12">
       <div className="container">
         <div className="row">
+        <div className="navbar-brand">
+          <img
+            src="/IMAGES/LOGO56.png"
+            alt="MESS"
+            style={{ height: "80px" }}
+          />
+        </div>
           <div className="col-6 col-md-2 mb-3">
-            <h3>Gande <br />
-            Tiffin Town</h3>
+            <h4>
+              {" "}
+              GANDE <span> TIFIIN</span>
+            </h4>{" "}
+            <h4>TWON</h4>
             <ul className="nav flex-column">
-              <li className="nav-item mb-2">
-              <FontAwesomeIcon icon={faFacebook} className="icon" />
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-black">
-                <FontAwesomeIcon icon={faInstagram} className="icon" />
-                </Link>
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-black">
-                <FontAwesomeIcon icon={faWhatsapp} className="icon" />
-                </Link>
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="/Record" className="nav-link p-0 text-black">
-                <FontAwesomeIcon icon={faMap} className="icon" />
-                </Link>
-              </li>
+              <div className="homebut">
+                <li className="nav-item mb-2">
+                  <Link to="/Home" className="nav-link p-0 text-black">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="/About" className="nav-link p-0 text-black">
+                    About
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="/Menupage" className="nav-link p-0 text-black">
+                    Menu
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link to="/LoginForm" className="nav-link p-0 text-black">
+                    Login
+                  </Link>
+                </li>
+              </div>
             </ul>
           </div>
+
           <div className="col-6 col-md-2 mb-3">
             <h5>Links</h5>
-            <ul className="nav flex-column">
-              <li className="nav-item mb-2">
-                <Link to="/Home" className="nav-link p-0 text-black">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-black">
-                  Features
-                </Link>
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="#" className="nav-link p-0 text-black">
-                  Pricing
-                </Link>
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="/Record" className="nav-link p-0 text-black">
-                  FAQs
-                </Link>
-              </li>
-              <li className="nav-item mb-2">
-                <Link to="/About" className="nav-link p-0 text-black">
-                  About
-                </Link>
-              </li>
-            </ul>
+
+            <div className="icon1">
+              <ul className="nav flex-column">
+                <li className="nav-item mb-2">
+                  <Link
+                    to="https://wa.me/918007077730"
+                    className="nav-link p-0 text-green"
+                  >
+                    <FontAwesomeIcon icon={faWhatsapp} className="icon" style={{ color: "green" }} />
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link
+                    to="https://www.facebook.com/nilesh.gande.9?mibextid=ZbWKwL"
+                    className="nav-link p-0 text-green"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} className="icon" style={{ color: "blue" }} />
+                  </Link>
+                </li>
+                <li className="nav-item mb-2 color-black">
+                  <Link
+                    to="https://www.instagram.com/nilesh_gande?igsh=MzNlNGNkZWQ4Mg=="
+                    className="nav-link p-0 text-black"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      className="icon"
+                      style={{ color: "red" }}
+                    />
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="col-6 col-md-2 mb-3">
             <h5>Contact</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-              <Link to="#" className="nav-link p-0 text-black">
+                <Link to="mailto:nileshgande149@gmail.com" className="nav-link p-0 text-black">
                   nileshgande149@gmail.com
                 </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link to="#" className="nav-link p-0 text-black">
+                <Link to="https://wa.me/918007077730" className="nav-link p-0 text-black">
                   8007077730
                 </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link to="#" className="nav-link p-0 text-black">
-                  Pricing
+                <Link to="https://www.instagram.com/nilesh_gande?igsh=MzNlNGNkZWQ4Mg==" className="nav-link p-0 text-black">
+                  @nilesh_gande
                 </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link to="#" className="nav-link p-0 text-black">
-                  FAQs
+                <Link to="https://www.facebook.com/nilesh.gande.9?mibextid=ZbWKwL" className="nav-link p-0 text-black">
+                   @nilesh.gande.9
                 </Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="#" className="nav-link p-0 text-black">
-                ©Space Pirates
+                  ©Space Pirates
                 </Link>
               </li>
             </ul>
           </div>
-
-         
 
           <div className="col-md-5 offset-md-1 mb-3">
             <form>
@@ -121,6 +139,7 @@ function Footer() {
               </div>
             </form>
           </div>
+          
         </div>
       </div>
     </div>

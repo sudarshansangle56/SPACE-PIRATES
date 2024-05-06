@@ -1,18 +1,4 @@
-
-
-
-@media screen and (min-width: 768px) {
-
-  .about1 {
-    height: 350px;
-    width: 500px;
-    background-color: silver;
-    border-radius: 3vh;
-    padding: 40px;
-    margin: 3vh;
-  }
-  
-  }
+/*About Page CSS*/
 
 .about1 img{
   height: 70px;
@@ -27,16 +13,46 @@
   align-items: center;
   margin-bottom: 2vh;
 }
+.about1 {
 
+  background-color: transparent;
+  border: 1px dashed black;
 
+}
+.about1 p {
+
+color: rgb(0, 0, 0);
+font-size: 2.5vh;
+
+}
+.about1  h2{
+  color: #551010;
+  font-family: 'Copperplate Gothic', sans-serif;
+}
+.aboutpage img{
+
+height: 480px;
+width: auto;
+margin-left: 2vh;
+}
+.aboutnav {
+ width: 100%;
+ /*background-color: #C0E7EF;*/
+background-color: #BEC84D;
+}
 .aboutpage {
 
   display: flex;
-  align-items: center;
+  align-items: center;  
+  background-color: #BEC84D;
+ 
+  background-size: cover;
+  background-position: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/* mobile **/
 
   @media only screen and (max-width: 768px) {
     .aboutpage {
@@ -45,11 +61,109 @@
     .about1 {
       height: 420px;
       width: 350px;
-      background-color: silver;
+      background-color: transparent;
       border-radius: 3vh;
       padding: 40px;
       margin: 4vh;
     }
+    .aboutpage img{
+
+      height: 350px;
+      width: auto;
+      margin-left: 2vh;
+      }
+
+      .about1 p {
+        font-size: 1.7vh;
+      padding-bottom:2vh;
+
+        }
+        .about1  h2{
+          color: #551010;
+          font-size: 3.8vh;
+          font-family: 'Copperplate Gothic', sans-serif;
+        }
 
     }
+
+@media screen and (min-width: 768px) {
+
+  .about1 {
+    height: 350px;
+    width: 500px;
+    background-color: transparent;
+    border-radius: 3vh;
+    padding: 40px;
+    margin: 3vh;
+  }
   
+  }
+  
+
+
+  /*MENU PAGE CSS*/
+
+  .menupage{
+    background-color: #BEC84D;
+   background-size: cover;
+   background-position: center;
+ 
+ }
+
+
+ .partb2{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.partb2 > * {
+  margin: 3vh;
+
+}
+
+.card img {
+  border-radius: 2.5vh;
+  padding: 5px;
+  border-radius: 70px 0 0 0;
+}
+
+.card button:hover {
+  font-size: 2.5vh;
+  background-color: #333;
+  color: #fff;
+  transition: 0.30s;
+}
+
+.cardbtn button {
+  width: 90%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card button:hover {
+  font-size: 2.5vh;
+  background-color: #333;
+  color: #fff;
+  transition: 0.30s;
+}
+.CardM1 h2{
+
+  color: #a52020;
+  font-family: 'Copperplate Gothic', sans-serif;
+}
+.card {
+
+  background-color: #e1e1e1;
+  border-radius: 70px 0px 50px 0px;
+    color: rgb(0, 0, 0);
+    border: #000000 1px dotted;
+    
+}

@@ -16,55 +16,64 @@ body {
 }
 .Footer12 {
   padding: 5vh;
-  background-color: #ffffff;
+  background-color: #e1e1e1;
   color: rgb(0, 0, 0);
+  border-top: 2px dashed black;
 
 }
-
-/* menun card  */
-.partb2{
+.Footer12 h5{
 
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 
 }
-.partb2 > * {
-  margin: 3vh;
+.Footer12 li{
+
+  display: flex;
+  align-items: center;
+
+}
+.map img{
+
+  height: 200px;
+  width: auto;
+  margin-left: 10vh;
+  border-radius: 2vh;
+}
+.Footer12 h4{
+
+  color: #a52020;
+  font-weight: bold;
+  font-family: 'Copperplate Gothic', sans-serif;
+
+}
+.homebut{
+
+  padding-left: 2vh;
 }
 
-.card img {
-  border-radius: 2.5vh;
-  padding: 5px;
+.Footer12 span{
+
+  color: rgb(0, 0, 0);
+
+}
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vh;
+  margin-top: 2.5vh;
+}
+.icon1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card button:hover {
-  font-size: 2.5vh;
-  background-color: #333;
-  color: #fff;
-  transition: 0.30s;
-}
+/* menun card  */
 
-.cardbtn button {
-  width: 90%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.card button:hover {
-  font-size: 2.5vh;
-  background-color: #333;
-  color: #fff;
-  transition: 0.30s;
-}
-.menupage{
-  background-color: #59ac1ab5;
-}
+
 @media screen and (min-width: 325px) and (max-width: 500px) {
   body {
     background-color: #f0f0f0;

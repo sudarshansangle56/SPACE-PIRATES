@@ -12,7 +12,7 @@ function CardMenu({Headl,title,link}) {
            {Headl}
           </p>
           <div className="cardbtn">
-          <button>BUY NOW</button>
+          
           </div>
        
         </div>

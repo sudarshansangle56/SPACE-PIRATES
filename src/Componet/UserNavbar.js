@@ -7,12 +7,12 @@ function UserNavbar() {
       <div className="navbar1">
         <nav
           className="navbar navbar-expand-lg navbar-dark"
-          style={{ fontSize: "3vh", backgroundColor: "rgb(64, 162, 99)" }} 
+          style={{ fontSize: "3vh", backgroundColor: "Transperent" }} 
         >
-          <img
-            src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/orange-and-white-circle-tiffin-logo-design-template-0o80qz9b525fbe.webp"
+           <img
+            src="/IMAGES/LOGO56.png"
             alt="MESS"
-            style={{ height: "68px" }}
+            style={{ height: "100px" }}
           />
           <div className="navbtn">
             <button

@@ -1,0 +1,110 @@
+.nav125{
+
+
+    background-image: url('../../public/IMAGES/HOMEBG.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.form-container12 {
+    margin-bottom: 30px; /* Adjust the value as needed */
+  }
+.container999 , .container998 {
+    max-width: 400px;
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    border-radius: 8px;
+    background-image: url('../../public/IMAGES/HOMEBG.jpg');
+    background-color: skyblue;
+    background-size: cover;
+    background-position: center;
+   background-color: transparent;
+    box-shadow: 2px 5px 8px 8px rgb(255, 255, 255);
+   
+  }
+  .container999 h2 , .container998 h2 {
+
+    color: rgb(255, 255, 255);
+    font-size: 8vh;
+
+}
+.form-container12 h4{
+
+    color: white;
+}
+.container998 h4{
+
+    color: white;
+
+
+}
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .form-group12 {
+    margin-bottom: 20px;
+
+        
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.296);
+
+  }
+  
+  input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .btn-submit12 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Blue submit button */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .login-link12 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .login-link12 a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+  }
+  
+  .login-link12 a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-msg12 {
+    color: #dc3545; /* Red error message */
+    margin-top: 10px;
+  }

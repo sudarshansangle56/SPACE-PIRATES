@@ -3,16 +3,36 @@ body {
 }
 .white {
   position: relative;
-  background-image: url('../../public/IMAGES/greenbg2.jpg');
+  background-color: #aeb83f;
+}
+
+.nav115{
+
+  background-image: url('../../public/IMAGES/HOME561.jpg');
   background-size: cover;
   background-position: center;
 }
+.nav15{
+
+  background-color: #beca3f;
+}
+
+.part2 p {
+  font-size: 15vh;
+}
+.part2 p span{
+  color: #ffea00;
+  font-weight: bold;
+}
+.img32 h1{
+
+}
 
 .part1 {
-  background-image: url('../../public/IMAGES/HOMEBG.jpg');
+  background-image: url('../../public/IMAGES/HOME56.jpg');
   background-size: cover;
   background-position: center;
-  height: 620px;
+  height: 640px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -595,12 +615,13 @@ display: none;
     margin-left: 10vh;
   }
   .box12 h1 {
-    margin-right: 15vh;
+    margin-right: 3vh;
+    padding-left: 2vh;
   }
   .box11 h1 {
+    font-size: 8vh;
   margin-right: 17vh;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -612,17 +633,11 @@ display: none;
   .white {
     overflow-x: hidden;
     position: relative;
-    background-image: url('../../public/IMAGES/greenbg2.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #BEC84D;
   }
 
   .headline {
-
-
     display: flex;
-
-
   }
 
   .part2 {

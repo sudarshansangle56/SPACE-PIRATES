@@ -7,32 +7,34 @@ import "../CSS/Home.css";
 function Home() {
   return (
     <div className="white">
+      <div className="nav115">
       <Navbar />
+      </div>
       <div className="part1">
         <div className="part2">
           <div className="headline">
             <div className="img32">
               <h1>
                 Welcome to Gande <br />
-                Tiffin Town <br />
+                <span>Tiffin </span> Town <br />
               </h1>
             </div>
 
             <div className="para">
               <p>Your Delicious Destination!</p>
             </div>
-
             <p>
-              Order a healthy and well-balanced meal designed by our <br />{" "}
-              expert dietician in any part of Mumbai. <br /> It’s all homemade…
-              "Ghar ka khana just the way you want."
+            Relish nutritious, balanced meals delivered to your Kopergaon doorstep. Enjoy 'Ghar ka khana' with its comforting touch, customized to your preferences. <span> Ab shuru karein sehatmand khaane ka anand, </span> jaise aap chahein, wherever you are in Kopergaon.
             </p>
             <Link to="/About">
               <button>About us</button>
             </Link>
           </div>
 
-          <div className="partimg"></div>
+          <div className="partimg">
+      
+
+          </div>
         </div>
       </div>
 
@@ -45,20 +47,19 @@ function Home() {
           <div className="box11">
             <div className="t1">
               <h1>
-                FRESH TO  <br /> DINNER TODAY
+              Start Your Food  <br />Adventure Here
               </h1>
             </div>
           </div>
           <div className="box12">
             <h1>
-              Lorem ipsum dolor sit amet  <br /> consectetur adipisicing elit. <br /> Ex
-              perspiciatis ratione porro.
+            Enjoy monthly tiffin service  <br />for just Rs 3000. Each tiffin costs only Rs 50.
             </h1>
           </div>
         </div>
         <div className="box2">
           <div className="box22">
-              <h1>Open Daily 5PM-10PM <br />
+              <h1>Open Daily 12AM-8PM <br />
                 Anapurna Nagar<br />
                 Kopergon
               </h1>
@@ -67,11 +68,7 @@ function Home() {
             <div className="box113">
               <img src="/IMAGES/cimg.png" alt="" srcset="" />
               <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi <br />
-                maiores unde quasi dignissimos fugiat ipsum, odit a aliquam{" "}
-                <br />
-                laboriosam ipsa modi culpa quae at iusto.
+              Enjoy the best tiffin services in Kopergaon, offering a wide range of delicious dishes specially prepared for various festivals. 
               </h3>
             </div>
           </div>
@@ -85,7 +82,7 @@ function Home() {
         <div className="home1">
           <div className="hf1">
             <div className="off">
-            50% <br /> OFF
+            20% <br /> OFF
             </div>
             <div className="on">
 
@@ -105,7 +102,7 @@ function Home() {
               </div>
               <div className="location3">
                 <img src="/IMAGES/Location.png" alt="" srcset="" />
-                <h1>Kopergon Dist Nagar 422105</h1>
+                <h1>Kopergaon Dist Nagar 423601</h1>
               </div>
             </div>
             <div className="car">

@@ -8,9 +8,9 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="navbar-brand">
           <img
-            src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/orange-and-white-circle-tiffin-logo-design-template-0o80qz9b525fbe.webp"
+            src="/IMAGES/LOGO56.png"
             alt="MESS"
-            style={{ height: "68px" }}
+            style={{ height: "120px" }}
           />
         </div>
         <button
@@ -34,6 +34,11 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/MenuPage">
                 Menu
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/About">
+                About us
               </Link>
             </li>
             <li className="nav-item">

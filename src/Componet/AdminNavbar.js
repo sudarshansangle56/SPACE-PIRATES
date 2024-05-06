@@ -8,10 +8,10 @@ function AdminNavbar() {
           style={{ fontSize: "3vh", backgroundColor: "rgb(64, 162, 99)" }} 
         >
           <img
-            src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/orange-and-white-circle-tiffin-logo-design-template-0o80qz9b525fbe.webp"
-            alt="MESS"
-            style={{ height: "68px" }}
-          />
+             src="/IMAGES/LOGO56.png"
+             alt="MESS"
+             style={{ height: "80px" }}
+           />
           <div className="navbtn">
             <button
               className="navbar-toggler"
