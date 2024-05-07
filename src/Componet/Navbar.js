@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
 
-function Navbar() {
+function Navbar({ onLoginClick }) {
   return (
     <div className="navbar1">
       <nav className="navbar navbar-expand-lg navbar-dark">
@@ -45,6 +45,11 @@ function Navbar() {
               <Link className="nav-link" to="/LoginForm">
                 Login
               </Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/LoginForm" onClick={onLoginClick}>
+                Login
+              </a>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/signup">

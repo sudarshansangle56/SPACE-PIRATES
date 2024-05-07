@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 import "../CSS/LoginForm.css"; // Import the CSS file
 import Navbar from "../Componet/Navbar";
 
-function SignInForm() {
+
+function SignInForm({ onClose }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userType, setUserType] = useState("user");
@@ -88,6 +89,7 @@ function SignInForm() {
             Welcome to Gande
             <span>Tiffin </span> Town
           </h4>
+          <button onClick={onClose}>Close</button>
           <h2>Login</h2>
           <form onSubmit={login}>
             <div className="form-group12">
@@ -138,6 +140,7 @@ function SignInForm() {
           </form>
         </div>
       </div>
+     
     </div>
   );
 }

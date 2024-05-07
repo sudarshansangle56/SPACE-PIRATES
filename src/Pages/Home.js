@@ -2,13 +2,15 @@ import React from "react";
 import Navbar from "../Componet/Navbar";
 import Footer from "../Componet/Footer";
 import { Link } from "react-router-dom";
+import LoginForm from "./LoginForm"
 import "../CSS/Home.css";
-
+import  { useState } from "react";
 function Home() {
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <div className="white">
       <div className="nav115">
-      <Navbar />
+      <Navbar onLoginClick={() => setShowLogin(true)} />
       </div>
       <div className="part1">
         <div className="part2">
@@ -120,7 +122,7 @@ function Home() {
           <div className="hf22"></div>
         </div>
       </div>
-
+         {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
       <div className="footer">
         <Footer />
       </div>

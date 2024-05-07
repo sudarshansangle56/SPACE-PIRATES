@@ -3,7 +3,6 @@ body {
 }
 .white {
   position: relative;
-  background-color: #aeb83f;
 }
 
 .nav115{
@@ -600,12 +599,12 @@ display: none;
 
 .partbb img {
 
-  transition: transform 2s ease;
+  transition: transform 3s ease;
   /* Smooth transition */
 }
 
 .partbb:hover img {
-  transform: rotate(-30deg);
+  transform: rotate(-60deg);
   /* Rotate the image 360 degrees on hover */
 }
 
@@ -633,7 +632,6 @@ display: none;
   .white {
     overflow-x: hidden;
     position: relative;
-    background-color: #BEC84D;
   }
 
   .headline {
