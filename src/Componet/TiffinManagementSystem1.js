@@ -1,17 +1,34 @@
-
-import '../CSS/TiffinManagementSystem.css';
 import React, { useState, useEffect } from 'react';
+import '../CSS/TiffinManagementSystem.css';
 import { database, ref, onValue } from "../Pages/firebase";
-
-
-const TiffinManagementSystem = () => {
+const CustomerTiffinRecord = () => {
   const [tiffins, setTiffins] = useState([]);
+  const [customers, setCustomers] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
-  const tiffinPrice = 40;
-  
+
+  useEffect(() => {
+    const customersRef = ref(database, 'customers');
+      
+    onValue(customersRef, (snapshot) => {
+      const customersData = snapshot.val();
+      if (customersData) {
+        const customersList = Object.keys(customersData).map((key) => ({
+          id: key,
+          name: customersData[key].name
+        }));
+        setCustomers(customersList);
+        setLoading(false); // Set loading to false when customers data is loaded
+      } else {
+        setCustomers([]);
+        setLoading(false); // Set loading to false even if there are no customers
+      }
+    });
+  }, []);
+
   useEffect(() => {
     const tiffinsRef = ref(database, 'tiffins');
-
+      
     onValue(tiffinsRef, (snapshot) => {
       const tiffinsData = snapshot.val();
       if (tiffinsData) {
@@ -26,34 +43,47 @@ const TiffinManagementSystem = () => {
     });
   }, []);
 
-  const calculateTiffinsNotTaken = () => {
-    const tiffinsNotTaken = {};
+  const calculateCustomerTiffinRecord = () => {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentYear = currentDate.getFullYear();
+    let customerTiffinRecord = {};
 
     tiffins.forEach((tiffin) => {
-      if (!tiffinsNotTaken[tiffin.name]) {
-        tiffinsNotTaken[tiffin.name] = {
-          name: tiffin.name,
-          totalTiffins: 0,
-          totalBill: 0
-        };
+      const tiffinDate = new Date(tiffin.date);
+      const tiffinMonth = tiffinDate.getMonth() + 1;
+      const tiffinYear = tiffinDate.getFullYear();
+
+      if (tiffinMonth === currentMonth && tiffinYear === currentYear) {
+        if (!customerTiffinRecord[tiffin.customerId]) {
+          customerTiffinRecord[tiffin.customerId] = {
+            name: customers.find((customer) => customer.id === tiffin.customerId)?.name,
+            totalTiffins: 0,
+            totalBill: 0
+          };
+        }
+        customerTiffinRecord[tiffin.customerId].totalTiffins++;
       }
-      tiffinsNotTaken[tiffin.name].totalTiffins++;
     });
 
-    for (let customer in tiffinsNotTaken) {
-      tiffinsNotTaken[customer].totalBill = (tiffinsNotTaken[customer].totalTiffins * tiffinPrice) - 2400;
+    for (let customerId in customerTiffinRecord) {
+      customerTiffinRecord[customerId].totalBill = (customerTiffinRecord[customerId].totalTiffins -60 ) * 40;
     }
 
-    return Object.values(tiffinsNotTaken);
+    return Object.values(customerTiffinRecord);
   };
 
-  const filteredCustomers = calculateTiffinsNotTaken().filter(customer => {
-    return customer.name && customer.name.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredCustomers = calculateCustomerTiffinRecord().filter(customer => {
+    return customer.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
+
+  if (loading) {
+    return <div>Loading...</div>; // Render loading message while data is being fetched
+  }
 
   return (
     <div className="container">
-      <h1>Tiffin Management System</h1>
+      <h2>Customer Tiffin Record for Current Month</h2>
       <div className="search-container">
         <input 
           type="text" 
@@ -63,11 +93,14 @@ const TiffinManagementSystem = () => {
         />
       </div>
       <div className="info-container">
-        <h2>Customers with tiffins not taken:</h2>
         <ul>
-          {filteredCustomers.map((customer) => (
-            <li key={customer.name}>
-              {customer.name} - Total Tiffins: {customer.totalTiffins}, Total Bill: RS{customer.totalBill}
+          {filteredCustomers.map((record) => (
+            <li key={record.name}>
+              <div className="record-info">
+                <p>Customer: {record.name}</p>
+                <p>Total Tiffins: {60-record.totalTiffins}</p>
+                <p>Total Bill: RS{record.totalBill}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -76,4 +109,4 @@ const TiffinManagementSystem = () => {
   );
 };
 
-export default TiffinManagementSystem;
+export default CustomerTiffinRecord;

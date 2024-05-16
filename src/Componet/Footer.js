@@ -22,7 +22,7 @@ function Footer() {
           <div className="col-6 col-md-2 mb-3">
             <h4>
               {" "}
-              GANDE <span> TIFIIN</span>
+              Sai sanchit <span> TIFIIN</span>
             </h4>{" "}
             <h4>TWON</h4>
             <ul className="nav flex-column">
@@ -50,7 +50,6 @@ function Footer() {
               </div>
             </ul>
           </div>
-
           <div className="col-6 col-md-2 mb-3">
             <h5>Links</h5>
 

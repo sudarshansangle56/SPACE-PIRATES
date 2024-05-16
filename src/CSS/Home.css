@@ -4,12 +4,18 @@ body {
 .white {
   position: relative;
 }
+.title {
+  text-shadow: 5px 2px 4px  rgba(0, 0, 0, 0.5);
+}
+
 
 .nav115{
 
   background-image: url('../../public/IMAGES/HOME561.jpg');
   background-size: cover;
   background-position: center;
+
+  
 }
 .nav15{
 
@@ -23,9 +29,7 @@ body {
   color: #ffea00;
   font-weight: bold;
 }
-.img32 h1{
 
-}
 
 .part1 {
   background-image: url('../../public/IMAGES/HOME56.jpg');
@@ -647,7 +651,8 @@ display: none;
 
   .headline h1 {
 
-    font-size: 37px;
+    font-size: 34px;
+    padding-right: 10px;
   }
 
   .headline p {

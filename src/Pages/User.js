@@ -16,7 +16,7 @@ function User() {
             <div className="headline">
               <div className="img32">
                 <h1>
-                  Welcome to Gande <br />
+                  Welcome to Sai sanchit <br />
                   <span>Tiffin </span> Town <br />
                 </h1>
               </div>

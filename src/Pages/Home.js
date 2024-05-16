@@ -2,22 +2,20 @@ import React from "react";
 import Navbar from "../Componet/Navbar";
 import Footer from "../Componet/Footer";
 import { Link } from "react-router-dom";
-import LoginForm from "./LoginForm"
 import "../CSS/Home.css";
-import  { useState } from "react";
+
 function Home() {
-  const [showLogin, setShowLogin] = useState(false);
   return (
     <div className="white">
       <div className="nav115">
-      <Navbar onLoginClick={() => setShowLogin(true)} />
+        <Navbar />
       </div>
       <div className="part1">
         <div className="part2">
           <div className="headline">
             <div className="img32">
-              <h1>
-                Welcome to Gande <br />
+              <h1 className="title">
+                Welcome to Sai sanchit <br />
                 <span>Tiffin </span> Town <br />
               </h1>
             </div>
@@ -26,17 +24,18 @@ function Home() {
               <p>Your Delicious Destination!</p>
             </div>
             <p>
-            Relish nutritious, balanced meals delivered to your Kopergaon doorstep. Enjoy 'Ghar ka khana' with its comforting touch, customized to your preferences. <span> Ab shuru karein sehatmand khaane ka anand, </span> jaise aap chahein, wherever you are in Kopergaon.
+              Relish nutritious, balanced meals delivered to your Kopergaon
+              doorstep. Enjoy 'Ghar ka khana' with its comforting touch,
+              customized to your preferences.{" "}
+              <span> Ab shuru karein sehatmand khaane ka anand, </span> jaise
+              aap chahein, wherever you are in Kopergaon.
             </p>
             <Link to="/About">
               <button>About us</button>
             </Link>
           </div>
 
-          <div className="partimg">
-      
-
-          </div>
+          <div className="partimg"></div>
         </div>
       </div>
 
@@ -49,28 +48,34 @@ function Home() {
           <div className="box11">
             <div className="t1">
               <h1>
-              Start Your Food  <br />Adventure Here
+                Start Your Food <br />
+                Adventure Here
               </h1>
             </div>
           </div>
           <div className="box12">
             <h1>
-            Enjoy monthly tiffin service  <br />for just Rs 3000. Each tiffin costs only Rs 50.
+              Enjoy monthly tiffin service <br />
+              for just Rs 3000. Each tiffin costs only Rs 50.
             </h1>
           </div>
         </div>
         <div className="box2">
           <div className="box22">
-              <h1>Open Daily 12AM-8PM <br />
-                Anapurna Nagar<br />
-                Kopergon
-              </h1>
+            <h1>
+              Open Daily 12AM-8PM <br />
+              Anapurna Nagar
+              <br />
+              Kopergon
+            </h1>
           </div>
           <div className="box33">
             <div className="box113">
               <img src="/IMAGES/cimg.png" alt="" srcset="" />
               <h3>
-              Enjoy the best tiffin services in Kopergaon, offering a wide range of delicious dishes specially prepared for various festivals. 
+                Enjoy the best tiffin services in Kopergaon, offering a wide
+                range of delicious dishes specially prepared for various
+                festivals.
               </h3>
             </div>
           </div>
@@ -78,18 +83,14 @@ function Home() {
       </div>
 
       <div className="homeservices">
-        <div className="homeservices2">
-        </div>
+        <div className="homeservices2"></div>
         <img className="service" src="/IMAGES/HOME33.jpg" alt="" srcset="" />
         <div className="home1">
           <div className="hf1">
             <div className="off">
-            20% <br /> OFF
+              20% <br /> OFF
             </div>
-            <div className="on">
-
-
-            </div>
+            <div className="on"></div>
           </div>
           <div className="hf11">
             <div className="cont">
@@ -122,7 +123,6 @@ function Home() {
           <div className="hf22"></div>
         </div>
       </div>
-         {showLogin && <LoginForm onClose={() => setShowLogin(false)} />}
       <div className="footer">
         <Footer />
       </div>

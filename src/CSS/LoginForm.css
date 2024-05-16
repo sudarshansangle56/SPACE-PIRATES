@@ -1,110 +1,227 @@
-.nav125{
+.all{
 
-
-    background-image: url('../../public/IMAGES/HOMEBG.jpg');
-    background-size: cover;
-    background-position: center;
-   
+  display: flex;
+  flex-direction: row;
+  
 }
+
+.nav144{
+  background-color: rgb(180, 172, 172);
+  color: #000;
+}
+.partfirst {
+  color: white;
+  width: 60%;
+  height: 750px;
+  background-image: url('../../public/IMAGES/HOMEBG56.jpg');
+  background-size: cover; 
+  background-position: center;
+}
+.partfirst{
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.parttwo{
+  width: 40%;
+  height: 750px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.part14{
+
+  width: 70%;
+  height: auto;
+}
+.partfirst h1{
+  font-family: 'Copperplate Gothic', sans-serif;
+  font-size: 6vh;
+}
+.partfirst p{
+  font-family: 'Copperplate Gothic', sans-serif;
+  
+
+
+}
+
+
+
+.container999{
+ height: 98%;
+ width: 80%;
+  padding: 70px;
+  border-radius: 8px;
+  color: #000000;
+
+
+}
+.container999 h2{
+  color: #007bff;
+  font-family: 'Copperplate Gothic', sans-serif;
+}
+
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.submit button{
+
+  background-color: #007bff;
+  border-radius: 5vh;
+  width: 150px;
+
+}
+
+
+ 
 .form-container12 {
-    margin-bottom: 30px; /* Adjust the value as needed */
-  }
-.container999 , .container998 {
-    max-width: 400px;
-    margin: 50px auto; /* Center the container */
-    padding: 20px;
-    border-radius: 8px;
-    background-image: url('../../public/IMAGES/HOMEBG.jpg');
-    background-color: skyblue;
-    background-size: cover;
-    background-position: center;
-   background-color: transparent;
-    box-shadow: 2px 5px 8px 8px rgb(255, 255, 255);
-   
-  }
-  .container999 h2 , .container998 h2 {
+  margin-top: 20px;
+}
 
-    color: rgb(255, 255, 255);
-    font-size: 8vh;
+.form-group12 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #040404;
+  background-color: rgba(192, 192, 192, 0.332);
+  opacity: 0.5;
+  border-radius: 5vh;
+  color: #000000;
 
 }
-.form-container12 h4{
+ input[type="radio"]{
+  width: 100%;
+  padding: 10px;
+  color: #000;
 
-    color: white;
-}
-.container998 h4{
-
-    color: white;
-
-
-}
   
-  h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: white;
-  }
+
+}
+
+input[type="radio"] {
+  border: 22px solid blue;
+  vertical-align: middle;
+  margin-right: 10px;
   
+}
+
+.btn-submit12 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; 
+  cursor: pointer;
+}
+
+.btn-submit12:hover {
+  background-color: #0056b3;
+}
+
+.login-link12 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link12 a {
+  color: #007bff; 
+      text-decoration: none;
+}
+
+.login-link12 a:hover {
+  text-decoration: underline;
+}
+
+.error-msg12 {
+  color: #dc3545; 
+  margin-top: 10px;
+}
+
+
+
+.radio-group12 input[type="radio"] {
+  display: none;
+   /* Hide the default radio buttons */
+}
+
+.radio-group12 label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+ 
+}
+
+/* Style for unchecked state */
+.radio-group12 label {
+  background-color: #ffffff;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for checked state */
+.radio-group12 input[type="radio"]:checked + label {
+  background-color: #007bff; /* Change to your desired background color */
+  color: #fff;
+  width: 200px;
+   /* Change to your desired text color */
+}
+@media only screen and (max-width: 768px) {
+  .partfirst {
+   display: none;/* Change height to auto for responsiveness */
+  }
+
+  .parttwo {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .container999 {
+    width: 90%;
+    padding: 20px; 
+  }
+
   .form-group12 {
-    margin-bottom: 20px;
+    margin-bottom: 15px; 
+  }
 
-        
+  .label {
+    display: flex;
+    align-items: center;
   }
-  
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    color: white;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="radio"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.296);
 
-  }
-  
-  input[type="radio"] {
-    display: inline-block;
+  .icon {
     margin-right: 10px;
   }
-  
-  .btn-submit12 {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff; /* Blue submit button */
-    color: #fff;
-    cursor: pointer;
+
+  .input-field,
+  .btn-submit {
+    width: 100%; 
+    font-size: 14px; 
   }
-  
-  .btn-submit:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
-  .login-link12 {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .login-link12 a {
-    color: #007bff; /* Blue link color */
-    text-decoration: none;
-  }
-  
-  .login-link12 a:hover {
-    text-decoration: underline;
-  }
-  
-  .error-msg12 {
-    color: #dc3545; /* Red error message */
-    margin-top: 10px;
-  }
+}

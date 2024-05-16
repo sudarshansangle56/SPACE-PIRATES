@@ -1,13 +1,13 @@
-.container999 {
-    max-width: 600px; /* Adjust the max-width to fit your design */
-    margin: 50px auto; /* Center the container */
+/*  .container999 {
+    max-width: 600px; /* 
+    margin: 50px auto; /* Center the container 
     padding: 20px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('../../public/IMAGES/HOMEBG.jpg'); /* Add your background image path */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
+    background-image: url('../../public/IMAGES/HOMEBG.jpg'); /* Add your background image path 
+    background-size: cover; /* Cover the entire container 
+    background-position: center; /* Center the background image 
   }
   
   .form-container12 {
@@ -46,13 +46,13 @@
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #007bff; /* Blue submit button */
+    background-color: #007bff; /* Blue submit button 
     color: #fff;
     cursor: pointer;
   }
   
   .btn-submit12:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; /* Darker blue on hover 
   }
   
   .login-link12 {
@@ -61,8 +61,7 @@
   }
   
   .login-link12 a {
-    color: #007bff; /* Blue link color */
-    text-decoration: none;
+    color: #007bff; /* Blue link color    text-decoration: none;
   }
   
   .login-link12 a:hover {
@@ -70,7 +69,13 @@
   }
   
   .error-msg12 {
-    color: #dc3545; /* Red error message */
+    color: #dc3545; /* Red error message 
     margin-top: 10px;
   }
+  
+*/
+
+
+
+
   

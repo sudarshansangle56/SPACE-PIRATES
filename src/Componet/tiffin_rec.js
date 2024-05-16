@@ -108,7 +108,7 @@ const TiffinManagementSystem = () => {
 
   return (
     <div className="container">
-      <h1>Tiffin Management System</h1>
+      <h2>Sai sanchit</h2>
       <div className="form-container">
         <h2>Add New Tiffin Record</h2>
         <div className="form-group">

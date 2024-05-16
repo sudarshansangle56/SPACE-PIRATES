@@ -10,7 +10,7 @@ function Navbar({ onLoginClick }) {
           <img
             src="/IMAGES/LOGO56.png"
             alt="MESS"
-            style={{ height: "120px" }}
+            style={{ height: "70px" }}
           />
         </div>
         <button
@@ -45,11 +45,6 @@ function Navbar({ onLoginClick }) {
               <Link className="nav-link" to="/LoginForm">
                 Login
               </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/LoginForm" onClick={onLoginClick}>
-                Login
-              </a>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/signup">
