@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../CSS/TiffinManagementSystem.css';
 import { database, ref, onValue } from "../Pages/firebase";
+
 const CustomerTiffinRecord = () => {
   const [tiffins, setTiffins] = useState([]);
   const [customers, setCustomers] = useState([]);
@@ -9,7 +10,6 @@ const CustomerTiffinRecord = () => {
 
   useEffect(() => {
     const customersRef = ref(database, 'customers');
-      
     onValue(customersRef, (snapshot) => {
       const customersData = snapshot.val();
       if (customersData) {
@@ -18,17 +18,16 @@ const CustomerTiffinRecord = () => {
           name: customersData[key].name
         }));
         setCustomers(customersList);
-        setLoading(false); // Set loading to false when customers data is loaded
+        setLoading(false);
       } else {
         setCustomers([]);
-        setLoading(false); // Set loading to false even if there are no customers
+        setLoading(false);
       }
     });
   }, []);
 
   useEffect(() => {
     const tiffinsRef = ref(database, 'tiffins');
-      
     onValue(tiffinsRef, (snapshot) => {
       const tiffinsData = snapshot.val();
       if (tiffinsData) {
@@ -67,18 +66,18 @@ const CustomerTiffinRecord = () => {
     });
 
     for (let customerId in customerTiffinRecord) {
-      customerTiffinRecord[customerId].totalBill = (customerTiffinRecord[customerId].totalTiffins -60 ) * 40;
+      customerTiffinRecord[customerId].totalBill = (customerTiffinRecord[customerId].totalTiffins - 60) * 40;
     }
 
     return Object.values(customerTiffinRecord);
   };
 
   const filteredCustomers = calculateCustomerTiffinRecord().filter(customer => {
-    return customer.name.toLowerCase().includes(searchTerm.toLowerCase());
+    return customer.name && customer.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
   if (loading) {
-    return <div>Loading...</div>; // Render loading message while data is being fetched
+    return <div>Loading...</div>;
   }
 
   return (
@@ -98,8 +97,8 @@ const CustomerTiffinRecord = () => {
             <li key={record.name}>
               <div className="record-info">
                 <p>Customer: {record.name}</p>
-                <p>Total Tiffins: {60-record.totalTiffins}</p>
-                <p>Total Bill: RS{record.totalBill}</p>
+                <p>Total Tiffins: {60 - record.totalTiffins}</p>
+                <p>Total Bill: RS {record.totalBill}</p>
               </div>
             </li>
           ))}

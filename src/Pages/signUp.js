@@ -116,7 +116,9 @@ function SignUpForm() {
    <div className="partfirst">
    <div className="part14">
      <h1>Welcome to Sai Sanchit <br /> tiffin twon</h1>
-     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim nostrum, commodi deserunt maiores totam, accusamus esse molestias dolor, a harum corrupti ab doloremque. Magnam commodi ipsam fuga maiores quas!</p>
+     <p>Enjoy the best tiffin services in Kopergaon, offering a wide
+                range of delicious dishes specially prepared for various
+                festivals.</p>
    </div>
    </div>
    <div className="parttwo">

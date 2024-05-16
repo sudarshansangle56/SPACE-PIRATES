@@ -6,9 +6,11 @@ import Footer from "../Componet/Footer";
 function UMenu() {
   return (
     <div>
-    <div className="nav115">
-        <UserNavbar />
+      <div className="navbar23">
+      <UserNavbar />
       </div>
+    
+   
       <Menu />
       
       <Footer />

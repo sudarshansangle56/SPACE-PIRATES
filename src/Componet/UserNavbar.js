@@ -7,7 +7,7 @@ function UserNavbar() {
       <div className="navbar1">
         <nav
           className="navbar navbar-expand-lg navbar-dark"
-          style={{ fontSize: "3vh", backgroundColor: "Transperent" }} 
+          style={{ fontSize: "3vh", backgroundColor: "Transperent",  color: "black" }} 
         >
            <img
             src="/IMAGES/LOGO56.png"
